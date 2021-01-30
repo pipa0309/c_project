@@ -7,8 +7,7 @@ void printArray(int* pBegin, int count)
 {
 	for (int i = 0; i < count; ++i)
 	{
-		printf("%d", *(pBegin + i));
-		printf("%d", *(pBegin + i));
+		printf("%d ", *(pBegin + i));
 	}
 }
 
