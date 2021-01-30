@@ -49,6 +49,40 @@ void swap(int* a, int* b)
 	*b = tmp;
 }
 
+void reverse(int* pBegin, int count)
+{
+	// прочитать весь массив
+	for (int i = 0; i < count; ++i)
+	{
+		printf("%d\n", *(pBegin+i)); //pBegin[i]
+	}
+
+	// записать все элементы массива
+	for (int i = 0; i < count; ++i)
+	{
+		*(pBegin + i) = 0; //pBegin[i] = 0
+	}
+
+	// поменять местами 1 и (i + 1) элем-ты
+	for (int i = 0; i < count; ++i)
+	{
+		/*swap(pBegin, pBegin[4]- i - 1); */
+		int r = count - i - 1;
+		printf("%d\n", r);
+	}
+	
+		// поменять местами 1 и (i + 1) элем-ты
+	/*for (int i = 0; i < count; ++i)
+	{
+		int tmp1 = array[i];
+		array[i] = count - i - 1;
+		count - i - 1 = tmp1;
+		/*printf("%d\n ", r);
+	}	*/
+
+
+}
+
 int main()
 {
 	int a = f();
@@ -59,11 +93,14 @@ int main()
 	int a2 = f4(pa); // int* p = pa 
 	zero(&a);
 	f5(&a2);
-	int a1 = 1;
+	a1 = 1;
 	a2 = 2;
 	//swap(a1, a2); // int a = a1; int b = a2;
 	swap(&a1, &a2);
-	return 0;
+	int array[] = { 1, 2, 3, 4, 5};
+	int size = 5;
+	reverse(array, size);
 
-	int* - это адрес,
+
+   //	int* - это адрес,
 }
