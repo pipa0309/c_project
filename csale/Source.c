@@ -21,10 +21,9 @@ double setVector(double* pVector, double x, double y, double z)
 	pVector[2] = 3;
 }
 
-double copyVector(double a, doble b)
+double copyVector(double* pVector, double x, double y, double z)
 {
-	double tmp = 0;
-
+	double  = 0;
 }
 
 int main()
