@@ -23,6 +23,7 @@ double setVector(double* pVector, double x, double y, double z)
 
 double copyVector(double a, doble b)
 {
+	double tmp = 0;
 
 }
 
